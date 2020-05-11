@@ -1,0 +1,2 @@
+a = 'stressed'
+b = a[::-1]
