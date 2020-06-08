@@ -1,0 +1,21 @@
+text = "I am an NLPer"
+
+def word_n_gram (text, n):
+    word_list = text.split(" ")
+    result = []
+
+    for i in range(len(word_list)-n+1):
+        result.append(word_list[i:i+n:1])
+    return result
+
+def str_n_gram(text, n):
+    str_list = [ s for s in text]
+    result = []
+
+    for i in range(len(str_list)-n+1):
+        result.append(str_list[i:i+n:1])
+    return result
+
+print(word_n_gram("I am an NLPer", 2))
+print(str_n_gram("I am an NLPer", 2))
+
