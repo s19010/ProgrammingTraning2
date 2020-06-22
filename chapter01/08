@@ -1,0 +1,17 @@
+def challenge8 (string):
+    stringList = []
+    result = ''
+
+    for i in range(0, len(string)):
+        if string[i].islower():
+            stringList.insert(i, chr(219-ord(string[i])))
+        else:
+            stringList.insert(i, string[i])
+
+        result += stringList[i]
+
+    return result
+
+print(challenge8("I Have A Apple"))
+print(challenge8("I Hzev A Akkov"))
+
